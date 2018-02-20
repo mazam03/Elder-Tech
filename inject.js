@@ -8,7 +8,7 @@
     let nextField = document.querySelector("#identifierNext");
 
     emailField.addEventListener("keypress", function() {
-        if (emailField.value.length >= 4){
+        if (emailField.value.length >= 6){
             nextField.style.outlineColor = "red"
             nextField.style.outlineWidth = "10px"
             nextField.style.outlineStyle = "solid"
