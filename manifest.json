@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+
+    "name": "Elder Tech",
+    "version": "0.1",
+    "description": "Chrome extension that helps the elderly better use technology",
+
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+
+      "content_scripts": [
+          {
+            "matches": ["https://accounts.google.com/*"],
+            "css": ["main.css"],
+            "js": ["inject.js"]
+          }
+      ],
+
+    "icons": { "16": "grannyIcon16.png","48": "grannyIcon48.png", "128": "grannyIcon128.png" },
+
+    "browser_action": {
+      "default_title": "Click here!",
+      "default_icon": "grannyIcon16.png",
+      "default_popup": "popup.html"
+    }
+}
