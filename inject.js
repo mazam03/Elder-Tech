@@ -1,7 +1,7 @@
 (function() {
 
    const emailField = document.querySelector("#identifierId");
-    emailField.style.outlineColor = "green"
+    emailField.style.outlineColor = "red"
     emailField.style.outlineWidth = "10px"
     emailField.style.outlineStyle = "solid"
 
@@ -19,8 +19,8 @@
    
     setInterval(function() {
         let passwordField = document.querySelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input");
-        if(passwordField.style.outlineColor != "green"){
-            passwordField.style.outlineColor = "green"
+        if(passwordField.style.outlineColor != "red"){
+            passwordField.style.outlineColor = "red"
             passwordField.style.outlineWidth = "10px"
             passwordField.style.outlineStyle = "solid"
         }
